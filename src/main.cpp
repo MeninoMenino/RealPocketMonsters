@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <enum/Types.h>
+#include <enum/Type.h>
 #include <structs/Pokemon.h>
 
 Pokemon pokemon;

@@ -2,6 +2,7 @@
 #define MOVE_H
 
 #include "enum/Type.h"
+#include "enum/MoveEffect.h"
 
 typedef struct {
 	//metainfo
@@ -9,11 +10,11 @@ typedef struct {
     int animation;
 
 	//info
-    int effect;
-	int power;
 	Type type;
-	double accuracy;
+	int power;
 	int pp;
+	double accuracy;
+	MoveEffect effect;
 	double effectChance;
 } Move;
 
