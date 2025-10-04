@@ -1,5 +1,5 @@
-#ifndef MOVEH
-#define MOVEH
+#ifndef MOVEEFFECT_H
+#define MOVEEFFECT_H
 
 typedef enum {
     NORMAL_HIT,
