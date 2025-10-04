@@ -1,9 +1,9 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
-#include "enum/Types.h"
+#include "enum/Type.h"
 
-typedef struct Pokemon {
+typedef struct {
     //metainfo
     int id;
     int sprite;
@@ -35,6 +35,6 @@ typedef struct Pokemon {
 	//; tm/hm learnset
 	//tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ZAP_CANNON, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, PSYCHIC_M, SHADOW_BALL, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, THUNDERPUNCH, DREAM_EATER, REST, ATTRACT, THIEF, FIRE_PUNCH, NIGHTMARE, FLASH
 	
-};
+} Pokemon;
 
 #endif

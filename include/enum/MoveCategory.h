@@ -1,10 +1,10 @@
 #ifndef MOVECATEGORY_H
 #define MOVECATEGORY_H
 
-enum MoveCategory {
+typedef enum {
   PHYSICAL,
   SPECIAL,
   EFFECT
-};
+} MoveCategory;
 
 #endif

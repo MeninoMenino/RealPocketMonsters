@@ -1,9 +1,9 @@
 #ifndef MOVE_H
 #define MOVE_H
 
-#include "enum/Types.h"
+#include "enum/Type.h"
 
-typedef struct Move {
+typedef struct {
 	//metainfo
     int id;
     int animation;
@@ -15,7 +15,7 @@ typedef struct Move {
 	double accuracy;
 	int pp;
 	double effectChance;
-};
+} Move;
 
 
 #endif

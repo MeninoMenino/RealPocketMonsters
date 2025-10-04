@@ -1,7 +1,7 @@
-#ifndef TYPES_H
-#define TYPES_H
+#ifndef TYPE_H
+#define TYPE_H
 
-enum Type {
+typedef enum {
   NORMAL,
   FIRE,
   WATER,
@@ -19,6 +19,6 @@ enum Type {
   DRAGON,
   DARK,
   STEEL
-};
+} Type;
 
 #endif
