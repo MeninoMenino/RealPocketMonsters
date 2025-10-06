@@ -1,29 +1,25 @@
-#ifndef POKEMON_H
-#define POKEMON_H
+#ifndef POKEMONBASE_H
+#define POKEMONBASE_H
 
 #include "enum/Type.h"
+#include "structs/Move.h"
 
 typedef struct {
     //metainfo
     int id;
-    
-    //info
-    char* name;
-    Type type[2];
 
-    //level info
-    int baseExp;
-    int exp;
-    int nextLevelExp;
-    int level;
-    
-    //stats
+    //base stats
     int hp;
     int attack;
     int defense;
     int speed;
     int specialAttack;
     int specialDefense;
+
+    //info
+    Type type[2];
+    int catchRate;
+    int baseExp;
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio
@@ -34,6 +30,6 @@ typedef struct {
 	//; tm/hm learnset
 	//tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ZAP_CANNON, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, PSYCHIC_M, SHADOW_BALL, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, THUNDERPUNCH, DREAM_EATER, REST, ATTRACT, THIEF, FIRE_PUNCH, NIGHTMARE, FLASH
 	
-} Pokemon;
+} PokemonBase;
 
 #endif

@@ -3,6 +3,7 @@
 
 #include "enum/Type.h"
 #include "enum/MoveEffect.h"
+#include "enum/MoveCategory.h"
 
 typedef struct {
 	//metainfo
@@ -10,12 +11,13 @@ typedef struct {
     int animation;
 
 	//info
-	Type type;
-	int power;
-	int pp;
-	double accuracy;
 	MoveEffect effect;
+	int power;
+	Type type;
+	double accuracy;
+	int pp;
 	double effectChance;
+	MoveCategory category;
 } Move;
 
 
