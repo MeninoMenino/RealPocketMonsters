@@ -2,6 +2,7 @@
 #define POKEMON_H
 
 #include "enum/Type.h"
+#include "structs/Stat.h"
 
 typedef struct {
     //metainfo
@@ -18,12 +19,12 @@ typedef struct {
     int level;
     
     //stats
-    int hp;
-    int attack;
-    int defense;
-    int speed;
-    int specialAttack;
-    int specialDefense;
+    Stat hp;
+    Stat attack;
+    Stat defense;
+    Stat speed;
+    Stat specialAttack;
+    Stat specialDefense;
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio

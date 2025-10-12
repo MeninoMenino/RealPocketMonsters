@@ -18,7 +18,12 @@ typedef enum {
   GHOST_TYPE,
   DRAGON_TYPE,
   DARK_TYPE,
-  STEEL_TYPE
+  STEEL_TYPE,
+
+  //unused?
+
+  CURSE_TYPE,
+  NONE_TYPE
 } Type;
 
 #endif

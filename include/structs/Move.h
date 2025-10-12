@@ -8,7 +8,6 @@
 typedef struct {
 	//metainfo
     int id;
-    int animation;
 
 	//info
 	MoveEffect effect;
@@ -17,7 +16,8 @@ typedef struct {
 	double accuracy;
 	int pp;
 	double effectChance;
-	MoveCategory category;
+
+	MoveCategory category = PHYSICAL;
 } Move;
 
 

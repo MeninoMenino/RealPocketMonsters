@@ -3,6 +3,7 @@
 
 #include "enum/Type.h"
 #include "structs/Move.h"
+#include "structs/Ev.h"
 
 typedef struct {
     //metainfo
@@ -20,6 +21,7 @@ typedef struct {
     Type type[2];
     int catchRate;
     int baseExp;
+    Ev ev[];
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio
