@@ -1,8 +1,6 @@
 #ifndef TYPEMATCHUPUTILS_H
 #define TYPEMATCHUPUTILS_H
 
-
-
 #include "../../include/enum/Type.h"
 
 // Retorna o multiplicador de dano de um tipo atacante contra um tipo defensor

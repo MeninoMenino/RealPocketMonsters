@@ -9,7 +9,7 @@ typedef struct {
     int id;
     
     //info
-    char* name;
+    String name;
     Type type[2];
 
     //level info

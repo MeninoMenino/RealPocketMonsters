@@ -6,7 +6,8 @@
 #include "structs/PokemonBase.h"
 #include "enum/Type.h"
 
-PokemonBase map[] = {
+PokemonBase pokemonMap[] = {
+    {0}, // Placeholder for index 0
     {1, 45, 49, 49, 45, 65, 65, {GRASS_TYPE, POISON_TYPE}, 45, 64, {{1, EV_SPECIAL_ATTACK}}}, // bulbasaur
     {2, 60, 62, 63, 60, 80, 80, {GRASS_TYPE, POISON_TYPE}, 45, 141, {{1, EV_SPECIAL_ATTACK}, {1, EV_SPECIAL_DEFENSE}}}, // ivysaur
     {3, 80, 82, 83, 80, 100, 100, {GRASS_TYPE, POISON_TYPE}, 45, 208, {{2, EV_SPECIAL_ATTACK}, {1, EV_SPECIAL_DEFENSE}}}, // venusaur
