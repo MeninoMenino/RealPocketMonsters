@@ -3,6 +3,7 @@
 
 #include "enum/Type.h"
 #include "structs/Stat.h"
+#include "structs/Nature.h"
 
 typedef struct {
     //metainfo
@@ -25,6 +26,8 @@ typedef struct {
     Stat speed;
     Stat specialAttack;
     Stat specialDefense;
+
+    Nature nature;
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio

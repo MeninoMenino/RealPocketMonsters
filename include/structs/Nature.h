@@ -1,12 +1,12 @@
 #ifndef NATURE_H
 #define NATURE_H
 
-#include "structs/Stat.h"
+#include "enum/StatsEnum.h"
 
 typedef struct {
     const char* name;
-    const Stat increased_stat;
-    const Stat decreased_stat;
+    const StatsEnum increase;
+    const StatsEnum decrease;
 } Nature;
 
 #endif

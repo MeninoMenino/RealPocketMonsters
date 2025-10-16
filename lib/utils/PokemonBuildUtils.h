@@ -8,8 +8,9 @@
 //Maps
 #include "PokemonMap.h"
 
+Pokemon pokemon;
+
 Pokemon buildPokemon(int id, int level) {
-    Pokemon pokemon;
     PokemonBase base = pokemonMap[id];
     
     pokemon.id = id;
@@ -22,7 +23,7 @@ Pokemon buildPokemon(int id, int level) {
     pokemon.exp = 0; // TODO: Placeholder, calculate!
     pokemon.nextLevelExp = 100; // TODO: Placeholder, calculate!
     
-    //Stats
+    //Base stats
     pokemon.hp.base = base.hp;
     pokemon.attack.base = base.attack;
     pokemon.defense.base = base.defense;
@@ -30,7 +31,55 @@ Pokemon buildPokemon(int id, int level) {
     pokemon.specialAttack.base = base.specialAttack;
     pokemon.specialDefense.base = base.specialDefense;
 
-    // TODO: Initialize IVs, EVs, and nature as needed
+    buildNature();
+
+    // TODO: Initialize IVs, EVs, and calculate final stats
+
+    return pokemon;
+}
+
+Pokemon buildNature() {
+    switch (pokemon.nature.increase) {
+        case ATK:
+            pokemon.attack.nature = 2;
+            break;
+        case DEF:
+            pokemon.defense.nature = 2;
+            break;
+        case SPD:
+            pokemon.speed.nature = 2;
+            break;
+        case SPATK:
+            pokemon.specialAttack.nature = 2;
+            break;
+        case SPDEF:
+            pokemon.specialDefense.nature = 2;
+            break;
+        case NONE:
+        default:
+            break;
+    }
+
+    switch (pokemon.nature.decrease) {
+        case ATK:
+            pokemon.attack.nature = -2;
+            break;
+        case DEF:
+            pokemon.defense.nature = -2;
+            break;
+        case SPD:
+            pokemon.speed.nature = -2;
+            break;
+        case SPATK:
+            pokemon.specialAttack.nature = -2;
+            break;
+        case SPDEF:
+            pokemon.specialDefense.nature = -2;
+            break;
+        case NONE:
+        default:
+            break;
+    }
 
     return pokemon;
 }
