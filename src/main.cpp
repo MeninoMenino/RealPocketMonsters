@@ -1,24 +1,30 @@
 #include <Arduino.h>
-#include <enum/Type.h>
-#include <structs/Pokemon.h>
 
-Pokemon pokemon;
+//Utils
+#include <PokemonBuildUtils.h>
+#include <PokemonTeamUtils.h>
 
 void setup() {
-  pokemon.name = "Bulbasaur";
-  pokemon.id = 1;
-  pokemon.level = 1;
-
+  pushPokemonToTeam(buildPokemon(1, 5));
+  pushPokemonToTeam(buildPokemon(2, 5));
+  pushPokemonToTeam(buildPokemon(3, 5));
+  
   Serial.begin(9600);
 }
 
 void loop() {
-  Serial.print("Name: ");
-  Serial.println(pokemon.name);
-  Serial.print("Number: ");
-  Serial.println(pokemon.id);
-  Serial.print("Level: ");
-  Serial.println(pokemon.level);
-
+  for (Pokemon pkmn : pokemonTeam) {
+    Serial.print("Name: ");
+    Serial.println(pkmn.name);
+    Serial.print("Number: ");
+    Serial.println(pkmn.id);
+    Serial.print("Level: ");
+    Serial.println(pkmn.level);
+    Serial.print("Types: ");
+    Serial.print(typeToString(pkmn.type[0]));
+    Serial.print("/");
+    Serial.print(typeToString(pkmn.type[1]));
+  }
+  
   delay(99999);
 }

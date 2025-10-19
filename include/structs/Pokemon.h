@@ -1,7 +1,7 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
-#include "enum/Type.h"
+#include "enum/TypeEnum.h"
 #include "structs/Stat.h"
 #include "structs/Nature.h"
 

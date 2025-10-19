@@ -4,7 +4,7 @@
 #include "enum/EvEnum.h"
 
 #include "structs/PokemonBase.h"
-#include "enum/Type.h"
+#include "enum/TypeEnum.h"
 
 PokemonBase pokemonMap[] = {
     {0}, // Placeholder for index 0

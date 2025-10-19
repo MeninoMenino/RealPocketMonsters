@@ -1,0 +1,15 @@
+#ifndef STATUSENUM_H
+#define STATUSENUM_H
+
+typedef enum {
+    STATUS_NONE,
+    STATUS_POISON,
+    STATUS_BURN,
+    STATUS_FREEZE,
+    STATUS_SLEEP,
+    STATUS_PARALYSIS,
+    STATUS_CONFUSION,
+    STATUS_CURSE
+} StatusEnum;
+
+#endif

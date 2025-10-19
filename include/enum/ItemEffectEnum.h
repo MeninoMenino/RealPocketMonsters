@@ -1,0 +1,11 @@
+#ifndef ITEMEFFECT_H
+#define ITEMEFFECT_H
+
+typedef enum {
+    ITEM_EFFECT_HEAL,
+    ITEM_EFFECT_BOOST_ATK,
+    ITEM_EFFECT_BOOST_DEF,
+    ITEM_EFFECT_CURE_STATUS
+} ItemEffect;
+
+#endif

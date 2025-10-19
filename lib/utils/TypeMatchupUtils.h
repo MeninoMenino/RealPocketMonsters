@@ -1,7 +1,7 @@
 #ifndef TYPEMATCHUPUTILS_H
 #define TYPEMATCHUPUTILS_H
 
-#include "../../include/enum/Type.h"
+#include "../../include/enum/TypeEnum.h"
 
 // Retorna o multiplicador de dano de um tipo atacante contra um tipo defensor
 static inline int inList(Type t, const Type *list, int n) {

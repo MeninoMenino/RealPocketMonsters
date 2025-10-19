@@ -1,9 +1,9 @@
 #ifndef MOVE_H
 #define MOVE_H
 
-#include "enum/Type.h"
-#include "enum/MoveEffect.h"
-#include "enum/MoveCategory.h"
+#include "enum/TypeEnum.h"
+#include "enum/MoveEffectEnum.h"
+#include "enum/MoveCategoryEnum.h"
 
 typedef struct {
 	//metainfo

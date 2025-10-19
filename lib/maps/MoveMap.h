@@ -1,7 +1,7 @@
 #ifndef MOVEMAP_H
 #define MOVEMAP_H
 
-#include "enum/Type.h"
+#include "enum/TypeEnum.h"
 #include "structs/Move.h"
 
 Move moves[] = {
@@ -257,6 +257,5 @@ Move moves[] = {
     { 250, EFFECT_TRAP_TARGET, 15, WATER_TYPE, 70, 15, 0 }, // WHIRLPOOL
     { 251, EFFECT_BEAT_UP, 10, DARK_TYPE, 100, 10, 0 } // BEAT_UP
 };
-    
 
 #endif

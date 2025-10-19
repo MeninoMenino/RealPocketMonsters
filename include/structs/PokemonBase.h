@@ -1,7 +1,7 @@
 #ifndef POKEMONBASE_H
 #define POKEMONBASE_H
 
-#include "enum/Type.h"
+#include "enum/TypeEnum.h"
 #include "structs/Move.h"
 #include "structs/Ev.h"
 
