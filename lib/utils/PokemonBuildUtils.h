@@ -10,9 +10,6 @@
 
 Pokemon pokemon;
 
-// Forward declaration
-Pokemon buildNature();
-
 Pokemon buildPokemon(int id, int level) {
     PokemonBase base = pokemonMap[id];
     

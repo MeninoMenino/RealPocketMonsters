@@ -32,4 +32,11 @@ Nature natureMap[] = {
     {"QUIRKY", NONE, NONE}
 };
 
+Nature generateRandomNature() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dist(0, sizeof(natureMap) / sizeof(Nature) - 1);
+    return natureMap[dist(gen)];
+}
+
 #endif

@@ -1,6 +1,8 @@
 #ifndef POKEMON_H
 #define POKEMON_H
 
+#include <random>
+#include "NatureMap.h"
 #include "enum/TypeEnum.h"
 #include "structs/Stat.h"
 #include "structs/Nature.h"
@@ -29,7 +31,7 @@ typedef struct {
     Stat specialAttack;
     Stat specialDefense;
 
-    Nature nature;
+    Nature nature = generateRandomNature();
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio
