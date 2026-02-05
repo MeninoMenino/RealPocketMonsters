@@ -5,17 +5,15 @@
 #include <stdint.h>
 #include <cstring>
 
-typedef std::string String;
-
 class UuidUtils {
 public:
     /**
      * Gera um UUID v4 (aleatório) no formato padrão
      * Exemplo: "550e8400-e29b-41d4-a716-446655440000"
      * 
-     * @return String contendo o UUID gerado
+     * @return std::string contendo o UUID gerado
      */
-    static String generateUuid() {
+    static std::string generateUuid() {
         uint8_t bytes[16];
         generateRandomBytes(bytes, 16);
         
@@ -85,9 +83,9 @@ private:
      * Formata um array de 16 bytes em uma string UUID
      * 
      * @param bytes Array de 16 bytes do UUID
-     * @return String formatada no padrão UUID
+     * @return std::string formatada no padrão UUID
      */
-    static String formatUuid(const uint8_t* bytes) {
+    static std::string formatUuid(const uint8_t* bytes) {
         char buffer[37];  // 36 caracteres + null terminator
         
         snprintf(buffer, sizeof(buffer),
@@ -98,7 +96,7 @@ private:
                 bytes[8], bytes[9],
                 bytes[10], bytes[11], bytes[12], bytes[13], bytes[14], bytes[15]);
         
-        return String(buffer);
+        return std::string(buffer);
     }
 };
 

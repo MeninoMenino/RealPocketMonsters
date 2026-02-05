@@ -2,18 +2,28 @@
 #define POKEMONTEAMUTILS_H
 
 #include "structs/Pokemon.h"
+#include <vector>
 
-Pokemon pokemonTeam[6];
+std::vector<Pokemon> team;
 
-Pokemon mainPokemon;
+bool pushPokemonToTeam(Pokemon p) {
+    if(team.size() >= 6) {
+        return false;
+    }
+    
+    team.push_back(p);
 
-void pushPokemonToTeam(Pokemon p) {
-    for (int i = 0; i < 6; i++) {
-        if (pokemonTeam[i].id == 0) {
-        pokemonTeam[i] = p;
-        return;
+    return true;
+}
+
+bool removePokemonFromTeam(Pokemon p) {
+    for(size_t i = 0; i < team.size(); i++) {
+        if(team[i].id == p.id) {
+            team.erase(team.begin() + i);
+            return true;
         }
     }
+    return false;
 }
 
 #endif

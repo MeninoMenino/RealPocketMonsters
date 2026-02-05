@@ -5,8 +5,8 @@
 
 typedef struct {
     const char* name;
-    const StatsEnum increase;
-    const StatsEnum decrease;
+    StatsEnum increase;
+    StatsEnum decrease;
 } Nature;
 
 #endif

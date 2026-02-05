@@ -21,7 +21,7 @@ typedef struct {
     Type type[2];
     int catchRate;
     int baseExp;
-    Ev ev[];
+    Ev ev[3];
 
 	//db NO_ITEM, NO_ITEM ; items
 	//db GENDER_F25 ; gender ratio

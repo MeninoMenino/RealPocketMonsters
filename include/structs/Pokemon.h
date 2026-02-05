@@ -8,10 +8,10 @@
 
 typedef struct {
     //metainfo
-    String id = UuidUtils::generateUuid();
+    std::string id = UuidUtils::generateUuid();
     
     //info
-    String name;
+    std::string name;
     int number;
     Type type[2];
 
