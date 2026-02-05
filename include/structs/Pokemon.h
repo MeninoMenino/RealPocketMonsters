@@ -4,13 +4,15 @@
 #include "enum/TypeEnum.h"
 #include "structs/Stat.h"
 #include "structs/Nature.h"
+#include "../lib/utils/UuidUtils.h"
 
 typedef struct {
     //metainfo
-    int id;
+    String id = UuidUtils::generateUuid();
     
     //info
     String name;
+    int number;
     Type type[2];
 
     //level info
